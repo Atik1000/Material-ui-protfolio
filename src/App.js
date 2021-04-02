@@ -7,6 +7,7 @@ import {
 import Home from './containers/home';
 import Services from './containers/services';
 import About from './containers/about';
+import Protfolio from './containers/Protfolio'
 import NotFound from './containers/not_found';
 import Layout from './components/layout'
 
@@ -24,6 +25,10 @@ function App() {
         </Route>
         <Route exact path={'/about'} >
           <About />
+        </Route>
+        <Route exact path={'/protfolio'} >
+        <Protfolio/>
+          
         </Route>
         <Route exact path={'/404'} >
           <NotFound />
